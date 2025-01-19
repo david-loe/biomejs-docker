@@ -29,16 +29,16 @@ The default working directory is set to `/code` in the container.
 
 ```sh
 # Check files
-docker run -v $(pwd):/code ghcr.io/biomejs/biome:1.9.4 biome check
-docker run -v $(pwd):/code ghcr.io/biomejs/biome:1.9.4 biome check --write
+docker run -v $(pwd):/code ghcr.io/biomejs/biome:1.9.4 check
+docker run -v $(pwd):/code ghcr.io/biomejs/biome:1.9.4 check --write
 
 # Lint files
-docker run -v $(pwd):/code ghcr.io/biomejs/biome:1.9.4 biome lint
-docker run -v $(pwd):/code ghcr.io/biomejs/biome:1.9.4 biome lint --write
+docker run -v $(pwd):/code ghcr.io/biomejs/biome:1.9.4 lint
+docker run -v $(pwd):/code ghcr.io/biomejs/biome:1.9.4 lint --write
 
 # Format files
-docker run -v $(pwd):/code ghcr.io/biomejs/biome:1.9.4 biome format
-docker run -v $(pwd):/code ghcr.io/biomejs/biome:1.9.4 biome format --write
+docker run -v $(pwd):/code ghcr.io/biomejs/biome:1.9.4 format
+docker run -v $(pwd):/code ghcr.io/biomejs/biome:1.9.4 format --write
 ```
 
 ## License
