@@ -13,8 +13,8 @@ Images are tagged with the following format:
 
 ```sh
 ghcr.io/biomejs/biome:{major}
-ghcr.io/biomejs/biome:{major}{minor}
-ghcr.io/biomejs/biome:{major}{minor}{patch}
+ghcr.io/biomejs/biome:{major}.{minor}
+ghcr.io/biomejs/biome:{major}.{minor}.{patch}
 ```
 
 ### Examples
