@@ -24,6 +24,8 @@ FROM alpine:${ALPINE_VERSION} AS biome
 
 COPY --from=builder /usr/src/biome/target/release/biome /usr/local/bin/biome
 
+RUN apk add --no-cache git
+
 WORKDIR /code
 
 ENTRYPOINT [ "/usr/local/bin/biome" ]
